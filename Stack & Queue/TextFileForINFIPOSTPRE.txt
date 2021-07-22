@@ -1,0 +1,24 @@
+Notes To Remember:
+1. Infix To postfix- We parse from left to right and check If its operand then we output it,
+			else, we push it into stack and,
+			for brackets we push '(' it into stack and pop every element till '(' whenever an ')' is found.
+			Now, if incoming infix operator precedence is less than that of the element at top of stack,
+			then we pop and print until and unless we find element having precedence greater than incoming infix operator.
+
+2. Infix To prefix- We reverse the given infix expression, we find postfix of the following and return the reverse of the postfix expression found.	
+
+3. Postfix To Infix- We parse from left to right and if its operand we push it into stack else, 
+			we pop two element from stack whenever a operator is found and make string like,
+			str = '(' + op2 + op + op1 + ')' and later push str again in stack.
+
+4. Prefix To Infix- We parse from right to left and if its operand we push it into stack else, 
+			we pop two element from stack whenever a operator is found and make string like,
+			str = '(' + op1 + op + op2 + ')' and later push str again in stack.
+
+5. Prefix To postfix- We parse from right to left and if its operand we push it into stack else, 
+			we pop two element from stack whenever a operator is found and make string like,
+			str = '(' + op1 + op2 + op + ')' and later push str again in stack.
+
+6. Postfix To prefix- We parse from left to right and if its operand we push it into stack else, 
+			we pop two element from stack whenever a operator is found and make string like,
+			str = '(' + op + op2 + op1 + ')' and later push str again in stack.
