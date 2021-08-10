@@ -22,7 +22,7 @@ bool Scrambled(string s1, string s2) {
 			break;
 		}
 	} 
-	return False;
+	return Flag;
 }
 
 int main() { 
